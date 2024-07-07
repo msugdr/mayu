@@ -14,7 +14,8 @@ const server = http.createServer(async (request, response) => {
 server.listen(process.env.PORT);
 
 async function wiki() {
-    const url = "http://ip.jsontest.com/";
+//    const url = "http://ip.jsontest.com/";
+    const url = "http://ja.wikipedia.org/w/api.php?origin=*&format=json&action=query&prop=revisions&rvprop=content&titles=AKB48
     const res = await fetch(url);
     const dat = await res.text();
     console.log(dat);
