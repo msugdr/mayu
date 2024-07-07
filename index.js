@@ -1,4 +1,4 @@
-const http = require('http');
+//const http = require('http');
 const express = require('express');
 const app = express();
 const port = process.env.PORT;
@@ -18,7 +18,7 @@ const server = http.createServer(async (request, response) => {
     }
 });
 server.listen(process.env.PORT);
-*/
+
 
 async function wiki(keyword) {
 //    const url = "http://ip.jsontest.com/";
@@ -44,3 +44,4 @@ async function wiki(keyword) {
     }
     return result;
 }
+*/
