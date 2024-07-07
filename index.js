@@ -3,7 +3,7 @@ const http = require('http');
 const server = http.createServer(async (request, response) => {
     try {
         const sz = await wiki("AKB48");
-        response.writeHead(200, { 'Content-Type': 'text/plain' });
+        response.writeHead(200, { 'Content-Type': 'text/plain;charset=utf-8' });
         response.end("Hello World Mayu!!\n" + sz);
     } catch (error) {
         response.writeHead(500, { 'Content-Type': 'text/plain' });
