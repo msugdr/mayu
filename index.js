@@ -31,7 +31,9 @@ async function wiki(keyword) {
       url+= "&" + key + "=" + urlPara[key];
     });
     const res = await fetch(url);
-    const dat = await res.text();
-    console.log(dat);
-    return dat;
+    const dat = await res.json();
+    for (const page in dat.query.pages) {
+        result=data.query.pages[page].extract;
+    }
+    return result;
 }
