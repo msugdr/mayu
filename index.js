@@ -33,7 +33,7 @@ async function wiki(keyword) {
     const res = await fetch(url);
     const dat = await res.json();
     for (const page in dat.query.pages) {
-        result=data.query.pages[page].extract;
+        result=dat.query.pages[page].extract;
     }
     return result;
 }
