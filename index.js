@@ -1,5 +1,12 @@
 const http = require('http');
-
+const express = require('express');
+const app = express();
+const port = process.env.PORT;
+app.get('/', (req, res) => {
+    res.send('Hello World, Youna');
+});
+app.listen(port);
+/*
 const server = http.createServer(async (request, response) => {
     try {
         const sz = await wiki("AKB48");
@@ -10,8 +17,8 @@ const server = http.createServer(async (request, response) => {
         response.end("Error: " + error.message);
     }
 });
-
 server.listen(process.env.PORT);
+*/
 
 async function wiki(keyword) {
 //    const url = "http://ip.jsontest.com/";
