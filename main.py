@@ -7,4 +7,4 @@ def get_json():
     return "Hello Youna!"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
