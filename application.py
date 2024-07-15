@@ -1,11 +1,10 @@
-from flask import Flask, jsonify
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
 def get_json():
-    json_data = {"name": "Youna", "age": 18, "sex": "female"}
-    return jsonify(json_data)
+    return "Hello Youna!"
 
 if __name__ == "__main__":
     app.run(debug=True, port=8080)
