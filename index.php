@@ -1,5 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <H1>API<h1>
 <?php
 $data = ['name' => 'YOUNA', age => 18];
-header("Content-Type: application/json; charset=utf-8");
 echo json_encode($data);
 ?>
+</body>
+</html>
