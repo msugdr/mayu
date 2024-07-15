@@ -3,8 +3,7 @@
 <body>
   <H1>API<h1>
 <?php
-$data = ['name' => 'YOUNA', age => 18];
-echo json_encode($data);
+echo "API server test on Microsoft Azure by PHP."
 ?>
 </body>
 </html>
