@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <H1>API<h1>
 <?php
+header("Content-Type: application/json; charset=utf-8");
 echo "API server test on Microsoft Azure by PHP."
 ?>
-</body>
-</html>
